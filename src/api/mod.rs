@@ -42,7 +42,7 @@ impl ModdbUrlBuilder {
         self
     }
 
-    pub fn api_mod(mut self, modid: u32) -> ModdbUrlBuilder {
+    pub fn r#mod(mut self, modid: u32) -> ModdbUrlBuilder {
         let api_mod = "/mod/";
         let id = modid.to_string();
         self.base = self.base + api_mod + &id;
